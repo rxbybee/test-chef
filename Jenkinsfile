@@ -1,7 +1,7 @@
 // Jenkinsfile
 library identifier: 'hello@master', retriever: modernSCM(
   [$class: 'GitSCMSource',
-   remote: 'https://github.com/rxbybee/shared_libraries',
+   remote: 'https://github.com/rxbybee/shared_libraries.git',
    credentialsId: '{env.GIT_AUTH_KEY}'])_
 
 stage('Say Hello') {
